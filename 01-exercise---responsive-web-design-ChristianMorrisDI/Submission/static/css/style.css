@@ -1,0 +1,79 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0 1rem 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  background: red;
+}
+
+a:active,
+a:hover {
+  text-decoration: underline;
+}
+
+/* Part A: Make the image responsive */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Default colour scheme */
+.background {
+  background: #fffffe;
+}
+
+.heading {
+  color: #272343;
+}
+
+.paragraph {
+  color: #2d334a;
+}
+
+.button {
+  background: #ffd803;
+  color: #272343;
+}
+/* Part B and C - Add colour schemes for tablet and desktop browsers below */
+@media only screen and (min-width: 48rem) { 
+.background	{
+  background: #fec7d7 
+}
+
+.heading, .paragraph {
+  color: #fffffe 
+}
+.button {
+  color: #fffffe;
+ background: #0e172c;
+}
+
+@media only screen and (min-width: 64rem) { 
+  .background {
+    background: #16161a
+  }
+  .heading {
+    color: #fffffe
+  }
+  .paragraph {
+    color: #94a1b2
+  }
+  .button {
+    background: #7f5af0;
+  }
